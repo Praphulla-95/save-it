@@ -26,6 +26,7 @@ public class Store {
         this.bill_ID = bill_ID;
     }
     private Double getbill_ID(){
+        
         return bill_ID ;
     }
    
