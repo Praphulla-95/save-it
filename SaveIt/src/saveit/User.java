@@ -9,7 +9,7 @@ package saveit;
  *
  * @author temp
  */
-public class User {
+public class User extends PersonalInfo {
     String user_Id;
     String password;
 }
