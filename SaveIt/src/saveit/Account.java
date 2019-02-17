@@ -37,6 +37,12 @@ public class Account {
     {
         return card_Details;
     }
+    public void Account(int account_No,String Name,String card_Details)
+    {
+        this.account_No=account_No;
+        this.name=name;
+        this.card_Details=card_Details;
+    }
             
             
     
