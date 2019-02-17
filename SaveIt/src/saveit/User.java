@@ -33,4 +33,5 @@ public class User extends PersonalInfo {
         this.user_Id=user_Id;
         this.password=password;
     }
+   MyPlan my=new MyPlan();
 }
