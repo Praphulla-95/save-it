@@ -10,5 +10,5 @@ package saveit;
  * @author 1894438
  */
 public class Wallet {
-    
+    Double bill, roundoffAmount, totalAmount;
 }
