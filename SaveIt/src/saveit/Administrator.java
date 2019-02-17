@@ -10,5 +10,5 @@ package saveit;
  * @author temp
  */
 public class Administrator {
-    
+    String role;
 }

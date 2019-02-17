@@ -5,10 +5,16 @@
  */
 package saveit;
 
+import java.util.Date;
+
 /**
  *
  * @author temp
  */
 public class PersonalInfo {
-    
+    String name;
+    Date date_Of_Birth;
+    String sex;
+    String address;
+    String card_Details;
 }
