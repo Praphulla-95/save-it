@@ -11,26 +11,26 @@ package saveit;
  */
 public class MyPlan {
  
-    String plan_name;
-    String plan_type;
+    String plan_Name;
+    String plan_Type;
     
-    private void setplan_name(){
+    private void setplan_Name(){
         
-        this.plan_name=plan_name;
-        
-    }
-    private String getplan_name(){
-        
-        return plan_name;
-    }
-      private void setplan_type(){
-        
-        this.plan_type=plan_type;
+        this.plan_Name=plan_Name;
         
     }
-    private String getplan_type(){
+    private String getplan_Name(){
         
-        return plan_type;
+        return plan_Name;
+    }
+      private void setplan_Type(){
+        
+        this.plan_Type=plan_Type;
+        
+    }
+    private String getplan_Type(){
+        
+        return plan_Type;
     }
 }
 
