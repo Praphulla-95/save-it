@@ -9,6 +9,6 @@ package saveit;
  *
  * @author temp
  */
-public class Administrator {
+public class Administrator extends PersonalInfo {
     String role;
 }
