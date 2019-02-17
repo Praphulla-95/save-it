@@ -10,5 +10,7 @@ package saveit;
  * @author 1894438
  */
 public class Category {
-    
+    String name;
+    String description;
+    Double id;
 }
