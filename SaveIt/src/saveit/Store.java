@@ -10,6 +10,6 @@ package saveit;
  * @author 1894438
  */
 public class Store {
-    String storeName;
-    Double billID;
+    String store_Name;
+    Double bill_ID;
 }
