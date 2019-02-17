@@ -12,7 +12,7 @@ package saveit;
 public class User extends PersonalInfo {
     String user_Id;
     String password;
-    private void setuser_Id()
+    private void setuser_Id(String user_Id)
     {
         this.user_Id=user_Id;
     }
@@ -20,7 +20,7 @@ public class User extends PersonalInfo {
     {
         return user_Id;
     }
-    private void setpassword()
+    private void setpassword(String password)
     {
         this.password=password;
     }
