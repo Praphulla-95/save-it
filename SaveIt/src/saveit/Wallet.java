@@ -11,4 +11,31 @@ package saveit;
  */
 public class Wallet {
     Double bill, round_off_Amount, total_Amount;
+
+
+     private void bill(){
+        
+        this.bill = bill;
+    }
+    private Double getbill(){
+        
+        return bill ;
+    }
+   
+    private void round_off_Amount(){
+        
+        this.round_off_Amount = round_off_Amount;
+    }
+    private Double getround_off_Amount(){
+        
+        return round_off_Amount ;
+    }
+    private void total_Amount(){
+        
+        this.total_Amount = total_Amount;
+    }
+    private Double gettotal_Amount(){
+        
+        return total_Amount ;
+    }
 }
