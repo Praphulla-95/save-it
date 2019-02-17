@@ -35,7 +35,7 @@ public class Category {
         this.id = id;
         
     }
-    private int getid(){
+    private Double getid(){
         
         return id;
     }
