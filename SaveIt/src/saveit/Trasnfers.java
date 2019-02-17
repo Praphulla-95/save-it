@@ -30,4 +30,9 @@ public class Trasnfers {
     {
         return date;
     }
+    public void Transfers(double amount,Date date){
+        this.amount=amount;
+        this.date=date;
+        
+    }
 }
