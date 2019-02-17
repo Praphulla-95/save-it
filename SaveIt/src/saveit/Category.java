@@ -13,6 +13,7 @@ public class Category {
     String name;
     String description;
     Double id;
+    
     private void setname(){
         
         this.name = name;
@@ -38,5 +39,12 @@ public class Category {
     private Double getid(){
         
         return id;
+    }
+
+    public void Category(String name, String description, Double id){
+        
+        this.name = name;
+        this.description = description;
+        this.id = id;
     }
 }

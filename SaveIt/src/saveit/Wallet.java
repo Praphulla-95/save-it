@@ -38,4 +38,10 @@ public class Wallet {
         
         return total_Amount ;
     }
+    public void Wallet(Double bill, Double round_off_Amount, Double total_Amount){
+        
+        this.bill = bill;
+        this.round_off_Amount = round_off_Amount;
+        this.total_Amount = total_Amount;
+    }
 }
