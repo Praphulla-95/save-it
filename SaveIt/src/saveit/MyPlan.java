@@ -23,5 +23,13 @@ public class MyPlan {
     public String getplan_type(){
         return plan_type;
     }
-    
+    public void setplan_name(String plan_name)
+    {
+        this.plan_name=plan_name;
+        
+    }
+    public void setplan_type(String plan_type)
+    {
+        this.plan_type=plan_type;
+    }
 }
