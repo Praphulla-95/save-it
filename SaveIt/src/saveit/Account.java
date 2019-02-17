@@ -13,6 +13,32 @@ public class Account {
     int Account_No;
     String Name;
     String Card_Details;
+    private void setAccount_No()
+    {
+        this.Account_No=Account_No;
+    }
+    private int getAccount_No()
+    {
+        return Account_No;
+    }
+    private void setName()
+    {
+        this.Name=Name;
+    }
+    private String getName()
+    {
+        return Name;
+    }
+    private void setCard_Details()
+    {
+        this.Card_Details=Card_Details;
+    }
+    private String getCard_Details()
+    {
+        return Card_Details;
+    }
+            
+            
     
     
 }
