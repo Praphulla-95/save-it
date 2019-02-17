@@ -10,6 +10,6 @@ package saveit;
  * @author temp
  */
 public class User {
-    String userid;
+    String user_Id;
     String password;
 }
