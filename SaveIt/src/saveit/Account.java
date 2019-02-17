@@ -5,15 +5,14 @@
  */
 package saveit;
 
-import java.util.Date;
-
 /**
  *
- * @author 1895915
+ * @author temp
  */
-public class Trasnfers {
-    double amount;
-    Date date;
+public class Account {
+    int Account_No;
+    String Name;
+    String Card_Details;
     
     
 }
