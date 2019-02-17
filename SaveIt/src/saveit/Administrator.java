@@ -19,4 +19,8 @@ public class Administrator extends PersonalInfo {
     {
         return role;
     }
+    public void Administrator(String role)
+    {
+        this.role=role;
+    }
 }

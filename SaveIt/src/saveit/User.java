@@ -28,4 +28,9 @@ public class User extends PersonalInfo {
     {
         return password;
     }
+    public void User(String user_Id,String password)
+    {
+        this.user_Id=user_Id;
+        this.password=password;
+    }
 }

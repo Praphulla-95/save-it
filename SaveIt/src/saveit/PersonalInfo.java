@@ -57,5 +57,12 @@ public class PersonalInfo {
     {
         return card_Details;
     }
-    
+    public void PersonalInfo(String name,Date date_Of_Birth,String sex,String address,String card_Details)
+    {
+        this.name=name;
+        this.date_Of_Birth=date_Of_Birth;
+        this.sex=sex;
+        this.address=address;
+        this.card_Details=card_Details;
+    }
 }
