@@ -5,10 +5,15 @@
  */
 package saveit;
 
+import java.util.Date;
+
 /**
  *
  * @author 1895915
  */
 public class Trasnfers {
+    double amount;
+    Date date;
+    
     
 }
