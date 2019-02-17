@@ -17,4 +17,45 @@ public class PersonalInfo {
     String sex;
     String address;
     String card_Details;
+    private void setname()
+    {
+        this.name=name;
+    }
+    private String getname()
+    {
+        return name;
+    }
+    private void setdate_Of_Birth()
+    {
+        this.date_Of_Birth=date_Of_Birth;
+    }
+    private Date getdate_Of_Birth()
+    {
+        return date_Of_Birth;
+    }
+    private void setsex()
+    {
+        this.sex=sex;
+    }
+    private String getsex()
+    {
+        return sex;
+    }
+    private void setaddress()
+    {
+        this.address=address;
+    }
+    private String getaddress()
+    {
+        return address;
+    }
+    private void setcard_Details()
+    {
+        this.card_Details=card_Details;
+    }
+    private String getcard_Details()
+    {
+        return card_Details;
+    }
+    
 }
