@@ -44,4 +44,5 @@ public class Wallet {
         this.round_off_Amount = round_off_Amount;
         this.total_Amount = total_Amount;
     }
+    Store s = new Store();
 }
