@@ -14,6 +14,20 @@ import java.util.Date;
 public class Trasnfers {
     double amount;
     Date date;
-    
-    
+    private void setamount()
+    {
+        this.amount=amount;
+    }
+   private double getamount()
+   {
+       return amount;
+   }
+    private void setdate()
+    {
+        this.date=date;
+    }
+    private Date getdate()
+    {
+        return date;
+    }
 }

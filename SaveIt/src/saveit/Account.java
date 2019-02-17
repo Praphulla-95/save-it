@@ -10,9 +10,35 @@ package saveit;
  * @author temp
  */
 public class Account {
-    int Account_No;
-    String Name;
-    String Card_Details;
+    int account_No;
+    String name;
+    String card_Details;
+    private void setaccount_No()
+    {
+        this.account_No=account_No;
+    }
+    private int getaccount_No()
+    {
+        return account_No;
+    }
+    private void setname()
+    {
+        this.name=name;
+    }
+    private String getname()
+    {
+        return name;
+    }
+    private void setcard_Details()
+    {
+        this.card_Details=card_Details;
+    }
+    private String getcard_Details()
+    {
+        return card_Details;
+    }
+            
+            
     
     
 }
