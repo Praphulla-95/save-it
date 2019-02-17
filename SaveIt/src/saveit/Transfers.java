@@ -34,7 +34,6 @@ public class Transfers {
         this.amount=amount;
         this.date=date;
     }
-    User u=new User();
-    Account a=new Account();
+   
     
 }
