@@ -29,6 +29,10 @@ public class Store {
         
         return bill_ID ;
     }
-   
-
+    
+    public void Store(String store_Name, Double bill_ID){
+    
+    this.store_Name = store_Name;
+    this.bill_ID = bill_ID;
+    }
 }
