@@ -35,4 +35,5 @@ public class Store {
     this.store_Name = store_Name;
     this.bill_ID = bill_ID;
     }
+     Category c = new Category();
 }
