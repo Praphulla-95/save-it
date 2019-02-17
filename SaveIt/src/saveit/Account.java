@@ -10,32 +10,32 @@ package saveit;
  * @author temp
  */
 public class Account {
-    int Account_No;
-    String Name;
-    String Card_Details;
-    private void setAccount_No()
+    int account_No;
+    String name;
+    String card_Details;
+    private void setaccount_No()
     {
-        this.Account_No=Account_No;
+        this.account_No=account_No;
     }
-    private int getAccount_No()
+    private int getaccount_No()
     {
-        return Account_No;
+        return account_No;
     }
-    private void setName()
+    private void setname()
     {
-        this.Name=Name;
+        this.name=name;
     }
-    private String getName()
+    private String getname()
     {
-        return Name;
+        return name;
     }
-    private void setCard_Details()
+    private void setcard_Details()
     {
-        this.Card_Details=Card_Details;
+        this.card_Details=card_Details;
     }
-    private String getCard_Details()
+    private String getcard_Details()
     {
-        return Card_Details;
+        return card_Details;
     }
             
             
