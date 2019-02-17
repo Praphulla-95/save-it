@@ -13,7 +13,7 @@ public class Account {
     int account_No;
     String name;
     String card_Details;
-    private void setAccount_No()
+    private void setaccount_No()
     {
         this.account_No=account_No;
     }
