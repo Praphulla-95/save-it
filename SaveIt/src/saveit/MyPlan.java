@@ -10,5 +10,6 @@ package saveit;
  * @author 1894438
  */
 public class MyPlan {
-    
+    String plan_1;
+    String plan_2;
 }
