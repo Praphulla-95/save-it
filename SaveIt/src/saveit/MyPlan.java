@@ -31,5 +31,8 @@ public class MyPlan {
     public void setplan_type(String plan_type)
     {
         this.plan_type=plan_type;
-    }
+   }
+User u=new User();
+Administrator ad=new Administrator();
+
 }
