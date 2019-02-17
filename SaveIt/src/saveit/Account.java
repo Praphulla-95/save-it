@@ -15,15 +15,17 @@ public class Account {
     String card_Details;
     private void setaccount_No()
     {
-        this.account_No = account_No;
+        this.account_No=account_No;
+        
     }
     private int getaccount_No()
     {
         return account_No;
+        
     }
     private void setname()
     {
-        this.name = name;
+        this.name=name;
     }
     private String getname()
     {
@@ -37,14 +39,12 @@ public class Account {
     {
         return card_Details;
     }
-    public void Account(int account_No,String Name,String card_Details)
+    public void Account(int account_No,String name,String card_Details)
     {
         this.account_No=account_No;
         this.name=name;
         this.card_Details=card_Details;
     }
-            
-            
-    
-    
 }
+
+    
