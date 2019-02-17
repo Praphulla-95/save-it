@@ -32,6 +32,11 @@ public class MyPlan {
         
         return plan_Type;
     }
+    public void MyPlan(String plan_Name,String plan_Type){
+        this.plan_Name=plan_Name;
+        this.plan_Type=plan_Type;
+    }
+    
 }
 
     
