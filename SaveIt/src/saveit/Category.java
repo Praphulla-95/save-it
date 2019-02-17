@@ -13,4 +13,30 @@ public class Category {
     String name;
     String description;
     Double id;
+    private void setname(){
+        
+        this.name = name;
+    }
+    private String getname(){
+        
+        return name;
+    }
+    private void setdescription(){
+        
+        this.description = description;
+        
+    }
+    private String getdescription(){
+        
+        return description;
+    }
+    private void id(){
+        
+        this.id = id;
+        
+    }
+    private Double getid(){
+        
+        return id;
+    }
 }
