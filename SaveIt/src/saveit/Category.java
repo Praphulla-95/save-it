@@ -14,29 +14,29 @@ public class Category {
     String description;
     Double id;
     
-    private void setname(String name){
+    public void setname(String name){
         
         this.name = name;
     }
-    private String getname(){
+    public String getname(){
         
         return name;
     }
-    private void setdescription(String description){
+    public void setdescription(String description){
         
         this.description = description;
         
     }
-    private String getdescription(){
+    public String getdescription(){
         
         return description;
     }
-    private void setid(Double id){
+    public void setid(Double id){
         
         this.id = id;
         
     }
-    private Double getid(){
+    public Double getid(){
         
         return id;
     }

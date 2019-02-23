@@ -13,19 +13,19 @@ public class Store {
     String store_Name;
     Double bill_ID;
 
-    private void setstore_Name(String store_Name){
+    public void setstore_Name(String store_Name){
         
         this.store_Name = store_Name;
     }
-    private String getstore_Name(){
+    public String getstore_Name(){
         
         return store_Name;
     }
-    private void setbill_ID(Double bill_ID){
+    public void setbill_ID(Double bill_ID){
         
         this.bill_ID = bill_ID;
     }
-    private Double getbill_ID(){
+    public Double getbill_ID(){
         
         return bill_ID ;
     }
