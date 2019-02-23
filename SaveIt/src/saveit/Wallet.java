@@ -13,7 +13,7 @@ public class Wallet {
     Double bill, round_off_Amount, total_Amount;
 
 
-     private void bill(Double bill){
+     private void setbill(Double bill){
         
         this.bill = bill;
     }
@@ -22,7 +22,7 @@ public class Wallet {
         return bill ;
     }
    
-    private void round_off_Amount(Double round_off_Amount){
+    private void setround_off_Amount(Double round_off_Amount){
         
         this.round_off_Amount = round_off_Amount;
     }
@@ -30,7 +30,7 @@ public class Wallet {
         
         return round_off_Amount ;
     }
-    private void total_Amount(Double total_Amount){
+    private void settotal_Amount(Double total_Amount){
         
         this.total_Amount = total_Amount;
     }

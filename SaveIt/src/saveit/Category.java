@@ -31,7 +31,7 @@ public class Category {
         
         return description;
     }
-    private void id(Double id){
+    private void setid(Double id){
         
         this.id = id;
         
