@@ -13,7 +13,7 @@ public class Store {
     String store_Name;
     Double bill_ID;
 
-    private void setstore_Name(){
+    private void setstore_Name(String store_Name){
         
         this.store_Name = store_Name;
     }
@@ -21,7 +21,7 @@ public class Store {
         
         return store_Name;
     }
-    private void setbill_ID(){
+    private void setbill_ID(Double bill_ID){
         
         this.bill_ID = bill_ID;
     }
