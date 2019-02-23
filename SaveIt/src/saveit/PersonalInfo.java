@@ -12,18 +12,27 @@ import java.util.Date;
  * @author temp
  */
 public class PersonalInfo {
-    String name;
+    String fname;
+    String lname;
     Date date_Of_Birth;
     String sex;
     String address;
     String card_Details;
-    private void setname(String name)
+    private void setfname(String fname)
     {
-        this.name=name;
+        this.fname=fname;
     }
-    private String getname()
+    private String getfname()
     {
-        return name;
+        return fname;
+    }
+    private void setlname(String lname)
+    {
+        this.lname=lname;
+    }
+    private String getlname()
+    {
+        return lname;
     }
     private void setdate_Of_Birth(Date date_Of_Birth)
     {
@@ -57,9 +66,10 @@ public class PersonalInfo {
     {
         return card_Details;
     }
-    public void PersonalInfo(String name,Date date_Of_Birth,String sex,String address,String card_Details)
+    public void PersonalInfo(String fname,String lname,Date date_Of_Birth,String sex,String address,String card_Details)
     {
-        this.name=name;
+        this.fname=fname;
+        this.lname=lname;
         this.date_Of_Birth=date_Of_Birth;
         this.sex=sex;
         this.address=address;
