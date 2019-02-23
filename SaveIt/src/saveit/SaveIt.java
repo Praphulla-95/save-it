@@ -53,6 +53,7 @@ public class SaveIt {
     {
         // TODO code application logic here\
         PersonalInfo pi=new PersonalInfo();
+        
         String fname="sai";
         String lname="krishna";
         Date dt=new Date();
