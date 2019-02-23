@@ -11,11 +11,11 @@ package saveit;
  */
 public class Administrator extends PersonalInfo {
     String role;
-    private void setrole(String role)
+    public void setrole(String role)
     {
         this.role=role;
     }
-    private String getrole()
+    public String getrole()
     {
         return role;
     }
