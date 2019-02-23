@@ -18,16 +18,16 @@ public class Category {
         
         this.name = name;
     }
-    private String getname(){
+    private String getname(String name){
         
         return name;
     }
-    private void setdescription(){
+    private void setdescription(String description){
         
         this.description = description;
         
     }
-    private String getdescription(){
+    private String getdescription(Double id){
         
         return description;
     }
