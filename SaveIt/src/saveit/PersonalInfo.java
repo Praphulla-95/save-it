@@ -17,7 +17,7 @@ public class PersonalInfo {
     String sex;
     String address;
     String card_Details;
-    private void setname()
+    private void setname(String name)
     {
         this.name=name;
     }
@@ -25,7 +25,7 @@ public class PersonalInfo {
     {
         return name;
     }
-    private void setdate_Of_Birth()
+    private void setdate_Of_Birth(Date date_Of_Birth)
     {
         this.date_Of_Birth=date_Of_Birth;
     }
@@ -33,7 +33,7 @@ public class PersonalInfo {
     {
         return date_Of_Birth;
     }
-    private void setsex()
+    private void setsex(String sex)
     {
         this.sex=sex;
     }
@@ -41,7 +41,7 @@ public class PersonalInfo {
     {
         return sex;
     }
-    private void setaddress()
+    private void setaddress(String address)
     {
         this.address=address;
     }
@@ -49,7 +49,7 @@ public class PersonalInfo {
     {
         return address;
     }
-    private void setcard_Details()
+    private void setcard_Details(String card_Details)
     {
         this.card_Details=card_Details;
     }
