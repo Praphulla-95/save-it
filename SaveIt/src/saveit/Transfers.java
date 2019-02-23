@@ -14,19 +14,19 @@ import java.util.Date;
 public class Transfers {
     double amount;
     Date date;
-    private void setamount(double amount)
+    public void setamount(double amount)
     {
         this.amount=amount;
     }
-   private double getamount()
+   public double getamount()
    {
        return amount;
    }
-    private void setdate(Date date)
+    public void setdate(Date date)
     {
         this.date=date;
     }
-    private Date getdate()
+    public Date getdate()
     {
         return date;
     }
