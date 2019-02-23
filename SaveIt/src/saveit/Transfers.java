@@ -14,7 +14,7 @@ import java.util.Date;
 public class Transfers {
     double amount;
     Date date;
-    private void setamount()
+    private void setamount(double amount)
     {
         this.amount=amount;
     }
@@ -22,7 +22,7 @@ public class Transfers {
    {
        return amount;
    }
-    private void setdate()
+    private void setdate(Date date)
     {
         this.date=date;
     }
