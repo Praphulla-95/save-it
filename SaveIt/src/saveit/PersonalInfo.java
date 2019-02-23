@@ -18,51 +18,51 @@ public class PersonalInfo {
     String sex;
     String address;
     String card_Details;
-    private void setfname(String fname)
+    public void setfname(String fname)
     {
         this.fname=fname;
     }
-    private String getfname()
+    public String getfname()
     {
         return fname;
     }
-    private void setlname(String lname)
+    public void setlname(String lname)
     {
         this.lname=lname;
     }
-    private String getlname()
+    public String getlname()
     {
         return lname;
     }
-    private void setdate_Of_Birth(Date date_Of_Birth)
+    public void setdate_Of_Birth(Date date_Of_Birth)
     {
         this.date_Of_Birth=date_Of_Birth;
     }
-    private Date getdate_Of_Birth()
+    public Date getdate_Of_Birth()
     {
         return date_Of_Birth;
     }
-    private void setsex(String sex)
+    public void setsex(String sex)
     {
         this.sex=sex;
     }
-    private String getsex()
+    public String getsex()
     {
         return sex;
     }
-    private void setaddress(String address)
+    public void setaddress(String address)
     {
         this.address=address;
     }
-    private String getaddress()
+    public String getaddress()
     {
         return address;
     }
-    private void setcard_Details(String card_Details)
+    public void setcard_Details(String card_Details)
     {
         this.card_Details=card_Details;
     }
-    private String getcard_Details()
+    public String getcard_Details()
     {
         return card_Details;
     }
