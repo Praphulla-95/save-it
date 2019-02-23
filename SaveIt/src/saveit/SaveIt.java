@@ -53,8 +53,8 @@ public class SaveIt {
     {
         // TODO code application logic here\
         PersonalInfo pi=new PersonalInfo();
-        String fname="sai";
-        String lname="krishna";
+        String fname="Sai";
+        String lname="Krishna";
         Date dt=new Date();
         String d=dt.toString();
         String id=generateid(d,fname,lname);

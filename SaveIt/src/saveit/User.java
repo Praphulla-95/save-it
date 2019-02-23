@@ -12,19 +12,19 @@ package saveit;
 public class User extends PersonalInfo {
     String user_Id;
     String password;
-    private void setuser_Id(String user_Id)
+    public void setuser_Id(String user_Id)
     {
         this.user_Id=user_Id;
     }
-    private String getuser_Id()
+    public String getuser_Id()
     {
         return user_Id;
     }
-    private void setpassword(String password)
+    public void setpassword(String password)
     {
         this.password=password;
     }
-    private String getpassword()
+    public String getpassword()
     {
         return password;
     }
