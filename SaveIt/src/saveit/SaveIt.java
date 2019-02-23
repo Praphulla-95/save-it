@@ -5,6 +5,7 @@
  */
 package saveit;
 
+import java.util.Calendar;
 import java.util.Date;
 
 /**
@@ -16,12 +17,48 @@ public class SaveIt {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+   
+    static String id;
+    
+    public static String generateid(String d,String fname,String lname)
+    {
+        char today;
+        String[] datesplit=d.split(" ");
+        
+        String year=datesplit[5].substring(2,4);
+       
+        String month=datesplit[1].toUpperCase();
+        
+        String date=datesplit[2];
+        int currentdate=Integer.parseInt(date);
+       
+            if(currentdate%2==0)
+            {
+                 today='E';
+            }
+            else
+            {
+                 today='O';
+            }
+           
+        fname=fname;
+        char fn=fname.charAt(0);
+        lname=lname;
+        char ln=lname.charAt(0);
+        id=year+"-"+month+"-"+today+"-"+fn+ln;
+        return id;
+    } 
+
+     public static void main(String[] args) 
+    {
         // TODO code application logic here\
-        
-        
-        
-        
+        PersonalInfo pi=new PersonalInfo();
+        String fname="sai";
+        String lname="krishna";
+        Date dt=new Date();
+        String d=dt.toString();
+        String id=generateid(d,fname,lname);
+        System.out.println(id);
     }
     
 }
