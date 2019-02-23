@@ -14,11 +14,11 @@ public class Category {
     String description;
     Double id;
     
-    private void setname(){
+    private void setname(String name){
         
         this.name = name;
     }
-    private String getname(String name){
+    private String getname(){
         
         return name;
     }
@@ -27,11 +27,11 @@ public class Category {
         this.description = description;
         
     }
-    private String getdescription(Double id){
+    private String getdescription(){
         
         return description;
     }
-    private void id(){
+    private void id(Double id){
         
         this.id = id;
         
