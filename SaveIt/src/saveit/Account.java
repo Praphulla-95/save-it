@@ -13,7 +13,7 @@ public class Account {
     int account_No;
     String name;
     String card_Details;
-    private void setaccount_No()
+    private void setaccount_No(int account_No)
     {
         this.account_No=account_No;
         
@@ -23,7 +23,7 @@ public class Account {
         return account_No;
         
     }
-    private void setname()
+    private void setname(String name)
     {
         this.name=name;
     }
@@ -31,7 +31,7 @@ public class Account {
     {
         return name;
     }
-    private void setcard_Details()
+    private void setcard_Details(String card_Details)
     {
         this.card_Details=card_Details;
     }
