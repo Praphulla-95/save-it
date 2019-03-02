@@ -29,6 +29,8 @@ public class SaveIt {
         u.display();
         Account ac=new Account(new Date(),15454564,"sai","hyderabad","128");
         ac.display();
+        Transfers t=new Transfers(new Date(),1000.00, "11-04-1995","152");
+        t.display();
     }
     
 }
