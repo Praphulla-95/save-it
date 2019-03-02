@@ -35,6 +35,8 @@ public class SaveIt {
         c.display();
         Wallet w=new Wallet(new Date(), 9.0, 9.0, 10.0,"165");
         w.display();
+        Store s=new Store(new Date(), "walmart", 10.30,"148");
+        s.display();
     }
     
 }
