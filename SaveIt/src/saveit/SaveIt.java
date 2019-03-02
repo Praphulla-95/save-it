@@ -21,8 +21,10 @@ public class SaveIt {
     public static void main(String[] args) 
     {
         // TODO code application logic here\
-        PersonalInfo pi=new PersonalInfo();
-        
+        PersonalInfo pi=new PersonalInfo(new Date(),"sai", "krishna", "11-04-1995", "male","hyderabad", "1223454","123");
+        pi.display();
+        Administrator a=new Administrator(new Date(),"lucas", "teja","11-05-1996","male", "hyd","45645","456","head");
+        a.display();
     }
     
 }
