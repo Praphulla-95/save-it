@@ -42,7 +42,7 @@ public class UserTest {
         Date date = new Date();
         String name = "Lucas";
         String expectedResult = "19-Mar-E-LS";
-        String realResult = saveit.Administrator.generateid(date, name);
+        String realResult = saveit.User.generateid(date, name);
         assertEquals(expectedResult, realResult);
     }
     // TODO add test methods here.

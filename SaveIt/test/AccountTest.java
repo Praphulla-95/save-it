@@ -14,11 +14,11 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author temp
+ * @author 1895915
  */
-public class PersonalInfoTest {
+public class AccountTest {
     
-    public PersonalInfoTest() {
+    public AccountTest() {
     }
     
     @BeforeClass
@@ -36,19 +36,17 @@ public class PersonalInfoTest {
     @After
     public void tearDown() {
     }
-    
+
+    // TODO add test methods here.
+    // The methods must be annotated with annotation @Test. For example:
+    //
      @Test
     public void generateIdTest()
     {
         Date date = new Date();
-        String name = "krishna";
-        String expectedResult = "19-Mar-E-KA";
-        String realResult = saveit.PersonalInfo.generateid(date, name);
+        String name = "Teja";
+        String expectedResult = "19-Mar-E-TA";
+        String realResult = saveit.Account.generateid(date, name);
         assertEquals(expectedResult, realResult);
     }
-    // TODO add test methods here.
-    // The methods must be annotated with annotation @Test. For example:
-    //
-    // @Test
-    // public void hello() {}
 }

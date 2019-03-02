@@ -14,11 +14,11 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author temp
+ * @author 1895915
  */
-public class PersonalInfoTest {
+public class TransferTest {
     
-    public PersonalInfoTest() {
+    public TransferTest() {
     }
     
     @BeforeClass
@@ -36,19 +36,18 @@ public class PersonalInfoTest {
     @After
     public void tearDown() {
     }
-    
-     @Test
-    public void generateIdTest()
-    {
-        Date date = new Date();
-        String name = "krishna";
-        String expectedResult = "19-Mar-E-KA";
-        String realResult = saveit.PersonalInfo.generateid(date, name);
-        assertEquals(expectedResult, realResult);
-    }
+
     // TODO add test methods here.
     // The methods must be annotated with annotation @Test. For example:
     //
-    // @Test
-    // public void hello() {}
+   @Test
+    public void generateIdTest()
+    {
+        Date date = new Date();
+        String name = "XX";
+        String expectedResult = "19-Mar-E-XX";
+        String realResult = saveit.Transfers.generateid(date, name);
+        assertEquals(expectedResult, realResult);
+    }
+  
 }
