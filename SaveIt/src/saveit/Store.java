@@ -12,6 +12,7 @@ package saveit;
 public class Store {
     String store_Name;
     Double bill_ID;
+    String id;
 
     public void setstore_Name(String store_Name){
         
@@ -29,11 +30,20 @@ public class Store {
         
         return bill_ID ;
     }
+    public void setid(String id){
+        
+        this.id = id;
+    }
+    public String getid(){
+        
+        return id;
+    }
     
-    public void Store(String store_Name, Double bill_ID){
+    public void Store(String store_Name, Double bill_ID, String id){
     
     this.store_Name = store_Name;
     this.bill_ID = bill_ID;
+    this.id = id;
     }
      Category c = new Category();
 }
