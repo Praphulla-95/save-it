@@ -10,7 +10,7 @@ package saveit;
  * @author 1893716
  */
 public class MyPlan {
-    String plan_name,plan_type;
+    String plan_name,plan_type,id;
     public void MyPlan(){
         this.plan_name=plan_name;
         this.plan_type=plan_type;
@@ -32,7 +32,20 @@ public class MyPlan {
     {
         this.plan_type=plan_type;
    }
-User u=new User();
+    public String setid(){
+        this.id=id;
+        return null;
+    }
+    public String getid(){
+        return id;
+    }
+    public void Myplan(String plan_name,String plan_type,String id){
+        this.plan_name=plan_name;
+        this.plan_type=plan_type;
+        this.id=id;
+    }
+    
+    User u=new User();
 Administrator ad=new Administrator();
 
 }
