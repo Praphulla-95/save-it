@@ -16,7 +16,7 @@ public class PersonalInfo {
     String id;
     String fname;
     String lname;
-    Date date_Of_Birth;
+    String date_Of_Birth;
     String sex;
     String address;
     String card_Details;
@@ -36,11 +36,11 @@ public class PersonalInfo {
     {
         return lname;
     }
-    public void setdate_Of_Birth(Date date_Of_Birth)
+    public void setdate_Of_Birth(String date_Of_Birth)
     {
         this.date_Of_Birth=date_Of_Birth;
     }
-    public Date getdate_Of_Birth()
+    public String getdate_Of_Birth()
     {
         return date_Of_Birth;
     }
@@ -76,7 +76,7 @@ public class PersonalInfo {
     {
         return id;
     }
-    public void PersonalInfo(Date newId, String fname,String lname,Date date_Of_Birth,String sex,String address,String card_Details,String id)
+    public PersonalInfo(Date newId, String fname,String lname,String date_Of_Birth,String sex,String address,String card_Details,String id)
     {
         this.fname=fname;
         this.lname=lname;
@@ -84,17 +84,16 @@ public class PersonalInfo {
         this.sex=sex;
         this.address=address;
         this.card_Details=card_Details;
-        this.id=id;
-        id=generateid(newId, fname);
+        this.id=generateid(newId, fname);
     }
     public static String generateid(Date id,String fname)
     {
         
-        SimpleDateFormat sdf=new SimpleDateFormat("yyyy-mmm-dd");
+        SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MMM-dd");
         String d=sdf.format(id);
         String[] datesplit=d.split("-");
         String formateddate=datesplit[0].substring(2);
-        formateddate +="-" + datesplit[1];
+        formateddate =formateddate+"-" + datesplit[1];
         if(Integer.parseInt(datesplit[2])%2==0)
         {
             formateddate += "-" + "E";
@@ -105,11 +104,11 @@ public class PersonalInfo {
         }
         if(fname.equals(""))
         {
-            formateddate += "-" + "xx";
+            formateddate += "-" + "XX";
         }
         else if(fname.length()==1)
         {
-            formateddate += "-" + fname.toUpperCase() + "x";
+            formateddate += "-" + fname.toUpperCase() + "X";
         }
         else if(fname.length()==2)
         {
@@ -123,7 +122,7 @@ public class PersonalInfo {
     } 
     public void display()
     {
-        System.out.println("id is:"+ id +"\n fname is:"+ fname+"\n date_Of_Birth is:"+date_Of_Birth+"\n sex is:"+sex+"/n card_Details is:"+card_Details);
+        System.out.println("\n id is:"+ id +"\n fname is:"+ fname+"\n date_Of_Birth is:"+date_Of_Birth+"\n sex is:"+sex+"\n card_Details is:"+card_Details);
     }
     
 }
