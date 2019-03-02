@@ -31,6 +31,10 @@ public class SaveIt {
         ac.display();
         Transfers t=new Transfers(new Date(),1000.00, "11-04-1995","152");
         t.display();
+        Category c=new Category(new Date(), "krishna","money","156");
+        c.display();
+        Wallet w=new Wallet(new Date(), 9.0, 9.0, 10.0,"165");
+        w.display();
     }
     
 }
