@@ -44,7 +44,7 @@ public class StoreTest {
         Date date = new Date();
         String name = "XX";
         String expectedResult = "19-Mar-E-XX";
-        String realResult = saveit.Category.generateid(date, name);
+        String realResult = saveit.Store.generateid(date, name);
         assertEquals(expectedResult, realResult);
     }
 }
