@@ -11,7 +11,7 @@ package saveit;
  */
 public class Administrator extends PersonalInfo {
     String role;
-    String id;
+    
    
     public void setrole(String role)
     {
@@ -21,14 +21,7 @@ public class Administrator extends PersonalInfo {
     {
         return role;
     }
-    public void setid(String id)
-    {
-        this.id=id;
-    }
-    public String getid()
-    {
-        return id;
-    }
+   
     
     public void Administrator(String role,String id)
     {
