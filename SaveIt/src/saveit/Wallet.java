@@ -94,5 +94,5 @@ public class Wallet {
     {
         System.out.println("\n id is:"+ id +"\n bill is:"+ bill+"\n round_of_amount is:"+round_off_Amount+"\n total_Amount is:"+total_Amount+"\n id is:"+id);
     }
-    Store s = new Store();
+    
 }
