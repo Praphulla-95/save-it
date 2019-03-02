@@ -5,6 +5,9 @@
  */
 package saveit;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 /**
  *
  * @author 1894438
@@ -39,11 +42,48 @@ public class Store {
         return id;
     }
     
-    public void Store(String store_Name, Double bill_ID, String id){
+    public Store(Date newId,String store_Name, Double bill_ID, String id){
     
     this.store_Name = store_Name;
     this.bill_ID = bill_ID;
-    this.id = id;
+    this.id=generateid(newId,"");
     }
-     Category c = new Category();
+     public static String generateid(Date id,String fname)
+    {
+        
+        SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MMM-dd");
+        String d=sdf.format(id);
+        String[] datesplit=d.split("-");
+        String formateddate=datesplit[0].substring(2);
+        formateddate =formateddate+"-" + datesplit[1];
+        if(Integer.parseInt(datesplit[2])%2==0)
+        {
+            formateddate += "-" + "E";
+        }
+        else
+        {
+            formateddate += "-" + "O";
+        }
+        if(fname.equals(""))
+        {
+            formateddate += "-" + "XX";
+        }
+        else if(fname.length()==1)
+        {
+            formateddate += "-" + fname.toUpperCase() + "X";
+        }
+        else if(fname.length()==2)
+        {
+            formateddate += "-" + fname.toUpperCase();
+        }
+        else
+        {
+            formateddate += "-" +fname.substring(0,1).toUpperCase()+fname.substring(fname.length()-1).toUpperCase();
+        }
+        return formateddate;
+    } 
+    public void display()
+    {
+        System.out.println("\n id is:"+ id +"\n billid is:"+ bill_ID+"\n store_Name is:"+store_Name);
+    }
 }
