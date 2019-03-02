@@ -5,6 +5,9 @@
  */
 package saveit;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 /**
  *
  * @author temp
@@ -48,13 +51,52 @@ public class Account {
     {
         return id;
     }
-    public void Account(int account_No,String name,String card_Details,String id)
+    public Account(Date newId,int account_No,String name,String card_Details,String id)
     {
         this.account_No=account_No;
         this.name=name;
         this.card_Details=card_Details;
-        this.id=id;
+        this.id=generateid(newId,name);
+    } 
+    public static String generateid(Date id,String fname)
+    {
+        
+        SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MMM-dd");
+        String d=sdf.format(id);
+        String[] datesplit=d.split("-");
+        String formateddate=datesplit[0].substring(2);
+        formateddate =formateddate+"-" + datesplit[1];
+        if(Integer.parseInt(datesplit[2])%2==0)
+        {
+            formateddate += "-" + "E";
+        }
+        else
+        {
+            formateddate += "-" + "O";
+        }
+        if(fname.equals(""))
+        {
+            formateddate += "-" + "XX";
+        }
+        else if(fname.length()==1)
+        {
+            formateddate += "-" + fname.toUpperCase() + "X";
+        }
+        else if(fname.length()==2)
+        {
+            formateddate += "-" + fname.toUpperCase();
+        }
+        else
+        {
+            formateddate += "-" +fname.substring(0,1).toUpperCase()+fname.substring(fname.length()-1).toUpperCase();
+        }
+        return formateddate;
+    } 
+    public void display()
+    {
+        System.out.println("\n id is:"+id+"\n account number is:"+account_No+"\n name is:"+name+"\n card_Details is:"+card_Details);
     }
+    
 }
 
     
