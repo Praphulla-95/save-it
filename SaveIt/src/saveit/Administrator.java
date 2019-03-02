@@ -28,4 +28,8 @@ public class Administrator extends PersonalInfo {
         this.role=role;
         this.id=id;
     }
+    public void createid()
+    {
+        
+    }
 }
