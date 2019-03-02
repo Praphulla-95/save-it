@@ -5,6 +5,7 @@
  */
 package saveit;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
@@ -13,7 +14,7 @@ import java.util.Date;
  */
 public class Transfers {
     double amount;
-    Date date;
+    String date;
     String id;
     public void setamount(double amount)
     {
@@ -23,11 +24,11 @@ public class Transfers {
    {
        return amount;
    }
-    public void setdate(Date date)
+    public void setdate(String date)
     {
         this.date=date;
     }
-    public Date getdate()
+    public String getdate()
     {
         return date;
     }
@@ -37,10 +38,48 @@ public class Transfers {
     public String getid(){
         return id;
     }
-    public void Transfers(double amount,Date date,String id){
+    public Transfers(Date newId,double amount,String date,String id){
         this.amount=amount;
         this.date=date;
-        this.id=id;
+        this.id=generateid(newId,"");
+    }
+    public static String generateid(Date id,String fname)
+    {
+        
+        SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MMM-dd");
+        String d=sdf.format(id);
+        String[] datesplit=d.split("-");
+        String formateddate=datesplit[0].substring(2);
+        formateddate =formateddate+"-" + datesplit[1];
+        if(Integer.parseInt(datesplit[2])%2==0)
+        {
+            formateddate += "-" + "E";
+        }
+        else
+        {
+            formateddate += "-" + "O";
+        }
+        if(fname.equals(""))
+        {
+            formateddate += "-" + "XX";
+        }
+        else if(fname.length()==1)
+        {
+            formateddate += "-" + fname.toUpperCase() + "X";
+        }
+        else if(fname.length()==2)
+        {
+            formateddate += "-" + fname.toUpperCase();
+        }
+        else
+        {
+            formateddate += "-" +fname.substring(0,1).toUpperCase()+fname.substring(fname.length()-1).toUpperCase();
+        }
+        return formateddate;
+    } 
+    public void display()
+    {
+        System.out.println("\n id is:"+ id +"\n amount is:"+ amount+"\n date :"+date);
     }
    
     
