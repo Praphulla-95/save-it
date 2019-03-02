@@ -5,6 +5,9 @@
  */
 package saveit;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 /**
  *
  * @author 1893716
@@ -39,11 +42,51 @@ public class MyPlan {
     public String getid(){
         return id;
     }
-    public void Myplan(String plan_name,String plan_type,String id){
+    public void Myplan(Date newId,String plan_name,String plan_type,String id){
         this.plan_name=plan_name;
         this.plan_type=plan_type;
-        this.id=id;
+        this.id=generateid(newId,"");
     }
+    public static String generateid(Date id,String fname)
+    {
+        
+        SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MMM-dd");
+        String d=sdf.format(id);
+        String[] datesplit=d.split("-");
+        String formateddate=datesplit[0].substring(2);
+        formateddate =formateddate+"-" + datesplit[1];
+        if(Integer.parseInt(datesplit[2])%2==0)
+        {
+            formateddate += "-" + "E";
+        }
+        else
+        {
+            formateddate += "-" + "O";
+        }
+        if(fname.equals(""))
+        {
+            formateddate += "-" + "XX";
+        }
+        else if(fname.length()==1)
+        {
+            formateddate += "-" + fname.toUpperCase() + "X";
+        }
+        else if(fname.length()==2)
+        {
+            formateddate += "-" + fname.toUpperCase();
+        }
+        else
+        {
+            formateddate += "-" +fname.substring(0,1).toUpperCase()+fname.substring(fname.length()-1).toUpperCase();
+        }
+        return formateddate;
+    } 
+    public void display()
+    {
+        System.out.println("\n id is:"+ id +"\n plan_name is:"+ plan_name+"\n plan_type is:"+plan_type);
+    }
+    
+    
     
 
 }
