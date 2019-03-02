@@ -37,6 +37,9 @@ public class SaveIt {
         w.display();
         Store s=new Store(new Date(), "walmart", 10.30,"148");
         s.display();
+        MyPlan mp=new MyPlan(new Date(),"basic","basic","189");
+        mp.display();
     }
+    
     
 }
