@@ -12,7 +12,7 @@ package saveit;
 public class Category {
     String name;
     String description;
-    Double id;
+    String id;
     
     public void setname(String name){
         
@@ -31,17 +31,17 @@ public class Category {
         
         return description;
     }
-    public void setid(Double id){
+    public void setid(String id){
         
         this.id = id;
         
     }
-    public Double getid(){
+    public String getid(){
         
         return id;
     }
 
-    public void Category(String name, String description, Double id){
+    public void Category(String name, String description, String id){
         
         this.name = name;
         this.description = description;

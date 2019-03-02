@@ -11,6 +11,7 @@ package saveit;
  */
 public class Wallet {
     Double bill, round_off_Amount, total_Amount;
+    String id;
 
 
      public void setbill(Double bill){
@@ -38,11 +39,19 @@ public class Wallet {
         
         return total_Amount ;
     }
-    public void Wallet(Double bill, Double round_off_Amount, Double total_Amount){
+    public void setid(String id){
+        
+        this.id = id; 
+    }
+    public String id(){
+        return id;
+    }
+    public void Wallet(Double bill, Double round_off_Amount, Double total_Amount, String id){
         
         this.bill = bill;
         this.round_off_Amount = round_off_Amount;
         this.total_Amount = total_Amount;
+        this.id = id;
     }
     Store s = new Store();
 }
