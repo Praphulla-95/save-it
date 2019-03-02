@@ -45,7 +45,5 @@ public class MyPlan {
         this.id=id;
     }
     
-    User u=new User();
-Administrator ad=new Administrator();
 
 }
