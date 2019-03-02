@@ -13,6 +13,7 @@ public class Account {
     int account_No;
     String name;
     String card_Details;
+    String id;
     public void setaccount_No(int account_No)
     {
         this.account_No=account_No;
@@ -39,11 +40,20 @@ public class Account {
     {
         return card_Details;
     }
-    public void Account(int account_No,String name,String card_Details)
+    public void setid(String id)
+    {
+        this.id=id;
+    }
+    public String getid()
+    {
+        return id;
+    }
+    public void Account(int account_No,String name,String card_Details,String id)
     {
         this.account_No=account_No;
         this.name=name;
         this.card_Details=card_Details;
+        this.id=id;
     }
 }
 
