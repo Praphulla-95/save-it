@@ -27,6 +27,8 @@ public class SaveIt {
         a.display();
         User u=new User(new Date(),"abc","def","21-30-1563","female","canada","55455454","126","jhhv","jhkhjv");
         u.display();
+        Account ac=new Account(new Date(),15454564,"sai","hyderabad","128");
+        ac.display();
     }
     
 }
