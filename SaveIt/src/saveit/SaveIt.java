@@ -25,6 +25,8 @@ public class SaveIt {
         pi.display();
         Administrator a=new Administrator(new Date(),"lucas", "teja","11-05-1996","male", "hyd","45645","456","head");
         a.display();
+        User u=new User(new Date(),"abc","def","21-30-1563","female","canada","55455454","126","jhhv","jhkhjv");
+        u.display();
     }
     
 }
