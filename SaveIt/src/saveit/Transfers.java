@@ -14,6 +14,7 @@ import java.util.Date;
 public class Transfers {
     double amount;
     Date date;
+    String id;
     public void setamount(double amount)
     {
         this.amount=amount;
@@ -30,9 +31,16 @@ public class Transfers {
     {
         return date;
     }
-    public void Transfers(double amount,Date date){
+    public void setid(String id){
+        this.id=id;
+    }
+    public String getid(){
+        return id;
+    }
+    public void Transfers(double amount,Date date,String id){
         this.amount=amount;
         this.date=date;
+        this.id=id;
     }
    
     
