@@ -43,7 +43,7 @@ public class PersonalInfoTest {
         Date date = new Date();
         String name = "krishna";
         String expectedResult = "19-Mar-E-KA";
-        String realResult = saveit.Administrator.generateid(date, name);
+        String realResult = saveit.PersonalInfo.generateid(date, name);
         assertEquals(expectedResult, realResult);
     }
     // TODO add test methods here.
