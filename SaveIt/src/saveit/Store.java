@@ -30,11 +30,11 @@ public class Store {
         
         return bill_ID ;
     }
-    public void id(String id){
+    public void setid(String id){
         
         this.id = id;
     }
-    public String id(){
+    public String getid(){
         
         return id;
     }

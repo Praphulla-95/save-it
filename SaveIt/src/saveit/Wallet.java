@@ -43,7 +43,7 @@ public class Wallet {
         
         this.id = id; 
     }
-    public String id(){
+    public String getid(){
         return id;
     }
     public void Wallet(Double bill, Double round_off_Amount, Double total_Amount, String id){
