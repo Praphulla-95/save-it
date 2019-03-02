@@ -80,5 +80,5 @@ public class User extends PersonalInfo {
     {
         System.out.println("\n id is:"+ id +"\n fname is:"+ fname+"\n lname is:"+lname+"\n date_Of_Birth is:"+date_Of_Birth+"\n sex is:"+sex+"\n card_Details is:"+card_Details+"\n user_id is:"+user_Id+"\n password is:"+password);
     }
-   MyPlan my=new MyPlan();
+  
 }
