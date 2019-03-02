@@ -12,6 +12,7 @@ import java.util.Date;
  * @author temp
  */
 public class PersonalInfo {
+    String id;
     String fname;
     String lname;
     Date date_Of_Birth;
@@ -66,7 +67,15 @@ public class PersonalInfo {
     {
         return card_Details;
     }
-    public void PersonalInfo(String fname,String lname,Date date_Of_Birth,String sex,String address,String card_Details)
+    public void setid(String id)
+    {
+        this.id=id;
+    }
+    public String getid()
+    {
+        return id;
+    }
+    public void PersonalInfo(String fname,String lname,Date date_Of_Birth,String sex,String address,String card_Details,String id)
     {
         this.fname=fname;
         this.lname=lname;
@@ -74,5 +83,6 @@ public class PersonalInfo {
         this.sex=sex;
         this.address=address;
         this.card_Details=card_Details;
+        this.id=id;
     }
 }
