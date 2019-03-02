@@ -42,7 +42,7 @@ public class MyPlan {
     public String getid(){
         return id;
     }
-    public void Myplan(Date newId,String plan_name,String plan_type,String id){
+    public MyPlan(Date newId,String plan_name,String plan_type,String id){
         this.plan_name=plan_name;
         this.plan_type=plan_type;
         this.id=generateid(newId,"");
