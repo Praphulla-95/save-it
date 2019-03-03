@@ -45,7 +45,7 @@ public class AccountTest {
     {
         Date date = new Date();
         String name = "Teja";
-        String expectedResult = "19-Mar-E-TA";
+        String expectedResult = "19-Mar-O-TA";
         String realResult = saveit.Account.generateid(date, name);
         assertEquals(expectedResult, realResult);
     }
