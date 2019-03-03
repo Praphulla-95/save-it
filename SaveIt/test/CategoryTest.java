@@ -42,7 +42,7 @@ public class CategoryTest {
     {
         System.out.println("Display Category Details");
         Date date = new Date();
-        String name = "PC";
+        String name = "Sai";
         String expectedResult = "19-Mar-O-SI";
         String realResult = saveit.Category.generateid(date, name);
         assertEquals(expectedResult, realResult);
