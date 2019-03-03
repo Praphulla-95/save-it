@@ -43,7 +43,7 @@ public class MyPlanTest {
         System.out.println("display MyPlan details");
         Date date = new Date();
         String name = "XX";
-        String expectedResult = "19-Mar-E-XX";
+        String expectedResult = "19-Mar-O-XX";
         String realResult = saveit.MyPlan.generateid(date, name);
         assertEquals(expectedResult, realResult);
     }
