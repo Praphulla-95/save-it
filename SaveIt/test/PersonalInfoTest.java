@@ -42,7 +42,7 @@ public class PersonalInfoTest {
     {
         Date date = new Date();
         String name = "krishna";
-        String expectedResult = "19-Mar-E-KA";
+        String expectedResult = "19-Mar-O-KA";
         String realResult = saveit.PersonalInfo.generateid(date, name);
         assertEquals(expectedResult, realResult);
     }
