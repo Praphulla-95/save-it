@@ -31,13 +31,13 @@ public class SaveIt {
         ac.display();
         Transfers t=new Transfers(new Date(),1000.00, "11-04-1995","152");
         t.display();
-        Category c=new Category(new Date(), "krishna","money","156");
+        Category c=new Category(new Date(), "pc","Type of store","156");
         c.display();
-        Wallet w=new Wallet(new Date(), 9.0, 9.0, 10.0,"165");
+        Wallet w=new Wallet(new Date(), 987265.0, 9.0, 10.0,"165");
         w.display();
-        Store s=new Store(new Date(), "walmart", 10.30,"148");
+        Store s=new Store(new Date(), "walmart", 987265.30,"148");
         s.display();
-        MyPlan mp=new MyPlan(new Date(),"basic","basic","189");
+        MyPlan mp=new MyPlan(new Date(),"basic plan","basic plan","189");
         mp.display();
     }
     
