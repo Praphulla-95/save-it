@@ -42,7 +42,7 @@ public class WalletTest {
     {
         System.out.println("Display Bill and Savings");
         Date date = new Date();
-        String name = "XX";
+        String name = "";
         String expectedResult = "19-Mar-O-XX";
         String realResult = saveit.Wallet.generateid(date, name);
         assertEquals(expectedResult, realResult);
