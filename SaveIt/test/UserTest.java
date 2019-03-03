@@ -41,7 +41,7 @@ public class UserTest {
     {
         Date date = new Date();
         String name = "Lucas";
-        String expectedResult = "19-Mar-E-LS";
+        String expectedResult = "19-Mar-O-LS";
         String realResult = saveit.User.generateid(date, name);
         assertEquals(expectedResult, realResult);
     }

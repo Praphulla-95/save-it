@@ -42,7 +42,7 @@ public class AdministratorTest {
     {
         Date date = new Date();
         String name = "Sai";
-        String expectedResult = "19-Mar-E-SI";
+        String expectedResult = "19-Mar-O-SI";
         String realResult = saveit.Administrator.generateid(date, name);
         assertEquals(expectedResult, realResult);
     }
