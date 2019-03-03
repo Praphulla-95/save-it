@@ -40,6 +40,7 @@ public class SaveIt {
         MyPlan mp=new MyPlan(new Date(),"basic plan","basic plan","189");
         mp.display();
         
+        
     }
     
     
